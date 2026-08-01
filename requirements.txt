@@ -1,0 +1,10 @@
+flask>=3.0
+python-dotenv>=1.0
+requests>=2.31
+beautifulsoup4>=4.12
+psycopg[binary]>=3.2,<4
+APScheduler>=3.10,<4
+langchain>=0.2
+langchain-core>=0.2
+langchain-openai>=0.1
+langgraph>=0.2
