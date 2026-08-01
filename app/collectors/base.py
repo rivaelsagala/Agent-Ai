@@ -10,6 +10,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from app.config import settings
+from app.market_models import CollectedNews
 
 
 JAKARTA = ZoneInfo("Asia/Jakarta")

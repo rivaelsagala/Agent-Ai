@@ -2,6 +2,7 @@
 from typing import List
 
 from app.collectors.base import BaseCollector, normalize_text, parse_indonesian_datetime
+from app.market_models import CollectedNews
 
 
 class OJKCollector(BaseCollector):

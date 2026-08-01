@@ -18,7 +18,7 @@ from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
 
 from app.llm import get_llm
-from app.service.tools.email_tools import EMAIL_TOOLS
+from app.services.tools.email_tools import EMAIL_TOOLS
 
 SYSTEM_PROMPT = """Kamu adalah asisten AI yang bertugas mengelola email pengguna melalui Gmail.
 

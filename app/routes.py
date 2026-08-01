@@ -43,8 +43,9 @@ def chat():
             {"error": "thread_id must be a non-empty string of at most 128 characters"}
         ), 400
 
+    agent_type = payload.get("agent_type", "auto")
     try:
-        result = handle_chat(message, thread_id.strip())
+        result = handle_chat(message, thread_id.strip(), agent_type=agent_type)
     except Exception:
         current_app.logger.exception("Agent chat failed")
         return jsonify({"error": "agent request failed"}), 502
