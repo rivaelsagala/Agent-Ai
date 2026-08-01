@@ -2,7 +2,7 @@
 from typing import Dict, Optional
 
 from app.market_models import SendResult
-from app.service.tools.email_tools import send_email
+from app.services.tools.email_tools import send_email
 
 
 class EmailChannel:
