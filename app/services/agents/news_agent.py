@@ -8,6 +8,7 @@ from functools import lru_cache
 
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
+from loguru import logger
 
 from app.llm import get_llm
 from app.services.tools.news_tools import NEWS_TOOLS
@@ -31,6 +32,7 @@ Aturan Kerja:
 @lru_cache(maxsize=1)
 def build_news_agent():
     """Membuat instance agent LangGraph untuk berita pasar."""
+    logger.info("Building News Agent ReAct graph...")
     llm = get_llm(temperature=0)
     checkpointer = MemorySaver()
 
@@ -46,12 +48,17 @@ def build_news_agent():
 def run_news_agent(user_input: str, thread_id: str) -> str:
     """Kirim pesan ke news agent dan kembalikan balasan terakhirnya."""
     if not thread_id:
+        logger.error("Value error: thread_id is missing for run_news_agent")
         raise ValueError("thread_id is required for the news agent")
 
+    logger.info(f"Executing News Agent for thread_id '{thread_id}' | input: '{user_input[:60]}...'")
     agent = build_news_agent()
     config = {"configurable": {"thread_id": thread_id}}
     result = agent.invoke(
         {"messages": [{"role": "user", "content": user_input}]},
         config=config,
     )
-    return result["messages"][-1].content
+    reply = result["messages"][-1].content
+    logger.info(f"News Agent response generated for thread_id '{thread_id}' | length: {len(reply)}")
+    return reply
+

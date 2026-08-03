@@ -7,6 +7,7 @@ from app.market_models import CollectedNews
 
 from bs4 import BeautifulSoup
 from email.utils import parsedate_to_datetime
+from loguru import logger
 
 TICKER_PATTERN = re.compile(r"\[([A-Z0-9-]{2,15})\]")
 IGNORED_HEADINGS = {
@@ -21,19 +22,25 @@ IGNORED_HEADINGS = {
 
 class IDXCollector(BaseCollector):
     def collect(self) -> List[CollectedNews]:
+        url = self.source["base_url"]
+        logger.debug(f"IDXCollector fetching from primary URL: {url}")
         try:
-            resp = self.session.get(self.source["base_url"], timeout=5)
+            resp = self.session.get(url, timeout=5)
             resp.raise_for_status()
             items = self.parse(resp.text)
             if items:
+                logger.info(f"IDXCollector parsed {len(items)} items from primary URL: {url}")
                 return items
+            logger.warning(f"No items parsed from primary URL {url}, falling back to IDX Channel RSS feed...")
             return self._fetch_fallback_rss()
-        except Exception:
+        except Exception as e:
+            logger.warning(f"Primary URL {url} fetch failed ({e}), initiating fallback to IDX Channel RSS feed...")
             return self._fetch_fallback_rss()
 
     def _fetch_fallback_rss(self) -> List[CollectedNews]:
         """Fallback to official IDX Channel RSS feed if idx.co.id is blocked by Cloudflare (403)."""
         url = "https://www.idxchannel.com/rss"
+        logger.info(f"Fetching fallback RSS feed from: {url}")
         try:
             response = self.session.get(url, timeout=15)
             response.raise_for_status()
@@ -67,9 +74,13 @@ class IDXCollector(BaseCollector):
                             metadata={"kind": "idx_channel_rss"},
                         )
                     )
-            return self.unique(items)
-        except Exception:
+            res = self.unique(items)
+            logger.info(f"Successfully collected {len(res)} items from IDX Channel RSS feed.")
+            return res
+        except Exception as e:
+            logger.error(f"Fallback RSS fetch failed: {e}")
             return []
+
 
     def parse(self, html: str) -> List[CollectedNews]:
         if self.source["source_type"] == "idx_disclosure":

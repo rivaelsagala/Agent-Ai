@@ -1,5 +1,6 @@
 """Collector for OJK press releases."""
 from typing import List
+from loguru import logger
 
 from app.collectors.base import BaseCollector, normalize_text, parse_indonesian_datetime
 from app.market_models import CollectedNews
@@ -27,4 +28,7 @@ class OJKCollector(BaseCollector):
                     metadata={"kind": "ojk_press_release"},
                 )
             )
-        return self.unique(items)
+        result = self.unique(items)
+        logger.info(f"OJKCollector parsed {len(result)} items from OJK source.")
+        return result
+
