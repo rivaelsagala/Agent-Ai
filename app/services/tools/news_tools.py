@@ -4,6 +4,7 @@ from typing import List, Optional, Dict, Any
 from langchain_core.tools import tool
 
 from app.collectors.registry import CollectorRegistry
+from app.collectors.base import format_indonesian_datetime
 from app.market_models import CollectedNews, NewsAnalysis
 from app.llm import get_llm
 from app.config import settings
@@ -64,9 +65,24 @@ def fetch_market_news(source_type: str = "all") -> str:
     if not items:
         return "Tidak ditemukan berita baru saat ini dari sumber yang diminta."
 
+    # Deduplicate items across sources by canonical_url and title
+    unique_items: List[CollectedNews] = []
+    seen_urls = set()
+    seen_titles = set()
+    for item in items:
+        url = item.canonical_url.strip() if item.canonical_url else ""
+        t_key = item.title.strip().lower() if item.title else ""
+        if (url and url in seen_urls) or (t_key and t_key in seen_titles):
+            continue
+        if url:
+            seen_urls.add(url)
+        if t_key:
+            seen_titles.add(t_key)
+        unique_items.append(item)
+
     formatted = []
-    for idx, item in enumerate(items[:10], 1):
-        date_str = item.published_at.strftime("%Y-%m-%d %H:%M") if item.published_at else "Terbaru"
+    for idx, item in enumerate(unique_items[:10], 1):
+        date_str = format_indonesian_datetime(item.published_at) if item.published_at else "Terbaru"
         formatted.append(f"{idx}. [{date_str}] {item.title}\n   URL: {item.canonical_url}\n   Ringkasan: {item.source_excerpt[:200]}")
 
     return "\n\n".join(formatted)
