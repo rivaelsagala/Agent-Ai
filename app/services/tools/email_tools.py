@@ -23,8 +23,10 @@ from typing import Optional, List
 
 from dotenv import load_dotenv
 from langchain_core.tools import tool
+from loguru import logger
 
 load_dotenv()
+
 NETWORK_TIMEOUT = float(os.getenv("EMAIL_NETWORK_TIMEOUT", "30"))
 
 # ---------------------------------------------------------------------------
@@ -39,7 +41,7 @@ SMTP_USE_TLS = os.getenv("SMTP_USE_TLS", "true").lower() == "true"
 IMAP_HOST = os.getenv("IMAP_HOST", "imap.gmail.com")
 IMAP_PORT = int(os.getenv("IMAP_PORT", "993"))
 IMAP_USERNAME = os.getenv("IMAP_USERNAME")
-IMAP_PASSWORD = os.getenv("IMAP_PASSWORD")
+IMAP_PASSWORD = os.getenv("IMAP_PASSWORD") 
 
 
 # ---------------------------------------------------------------------------
@@ -128,8 +130,10 @@ def send_email(
         Pesan status pengiriman (berhasil atau error).
     """
     if not SMTP_USERNAME or not SMTP_PASSWORD:
+        logger.error("SMTP_USERNAME or SMTP_PASSWORD environment variables are missing.")
         return "Error: SMTP_USERNAME atau SMTP_PASSWORD belum diset di environment variable."
 
+    logger.info(f"Tool 'send_email' invoked | to: '{to}' | subject: '{subject}' | is_html: {is_html}")
     try:
         msg = MIMEMultipart()
         msg["From"] = SMTP_USERNAME
@@ -152,15 +156,19 @@ def send_email(
             server.login(SMTP_USERNAME, SMTP_PASSWORD)
             server.sendmail(SMTP_USERNAME, recipients, msg.as_string())
 
+        logger.info(f"Email successfully sent via SMTP to {to}")
         return f"Email berhasil dikirim ke {to}"
 
-    except smtplib.SMTPAuthenticationError:
+    except smtplib.SMTPAuthenticationError as e:
+        logger.error(f"SMTP authentication failed: {e}")
         return (
             "Error: Autentikasi SMTP gagal. Pastikan SMTP_PASSWORD adalah "
             "App Password Gmail (bukan password akun biasa)."
         )
     except Exception as e:
+        logger.exception(f"Error during send_email: {e}")
         return f"Error saat mengirim email: {str(e)}"
+
 
 
 @tool
@@ -177,6 +185,7 @@ def read_emails(folder: str = "INBOX", limit: int = 10, unread_only: bool = Fals
         Ringkasan setiap email (ID, dari, subjek, tanggal, cuplikan isi),
         dipisahkan oleh "---".
     """
+    logger.info(f"Tool 'read_emails' invoked | folder: '{folder}' | limit: {limit} | unread_only: {unread_only}")
     try:
         conn = _connect_imap()
         conn.select(folder)
@@ -185,11 +194,13 @@ def read_emails(folder: str = "INBOX", limit: int = 10, unread_only: bool = Fals
         status, data = conn.search(None, search_criteria)
         if status != "OK":
             conn.logout()
+            logger.warning(f"IMAP search status not OK for folder '{folder}'")
             return f"Gagal mencari email di folder {folder}"
 
         email_ids = data[0].split()
         if not email_ids:
             conn.logout()
+            logger.info(f"No emails found in folder '{folder}' (search_criteria={search_criteria})")
             return f"Tidak ada email {'belum dibaca ' if unread_only else ''}di folder {folder}"
 
         email_ids = email_ids[-limit:]
@@ -215,10 +226,13 @@ def read_emails(folder: str = "INBOX", limit: int = 10, unread_only: bool = Fals
             )
 
         conn.logout()
+        logger.info(f"Successfully read {len(results)} email(s) from '{folder}'")
         return "\n---\n".join(results)
 
     except Exception as e:
+        logger.exception(f"Error during read_emails: {e}")
         return f"Error saat membaca email: {str(e)}"
+
 
 
 @tool

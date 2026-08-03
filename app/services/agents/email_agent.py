@@ -16,6 +16,7 @@ from functools import lru_cache
 
 from langgraph.prebuilt import create_react_agent
 from langgraph.checkpoint.memory import MemorySaver
+from loguru import logger
 
 from app.llm import get_llm
 from app.services.tools.email_tools import EMAIL_TOOLS
@@ -46,6 +47,7 @@ Aturan kerja:
 @lru_cache(maxsize=1)
 def build_email_agent():
     """Membuat instance agent LangGraph yang siap dipakai (invoke/stream)."""
+    logger.info("Building Email Agent ReAct graph...")
     llm = get_llm(temperature=0)
 
     # MemorySaver -> agent ingat riwayat percakapan selama proses berjalan.
@@ -64,12 +66,17 @@ def build_email_agent():
 def run_email_agent(user_input: str, thread_id: str) -> str:
     """Kirim pesan ke email agent dan kembalikan balasan terakhirnya."""
     if not thread_id:
+        logger.error("Value error: thread_id is missing for run_email_agent")
         raise ValueError("thread_id is required for the email agent")
 
+    logger.info(f"Executing Email Agent for thread_id '{thread_id}' | input: '{user_input[:60]}...'")
     agent = build_email_agent()
     config = {"configurable": {"thread_id": thread_id}}
     result = agent.invoke(
         {"messages": [{"role": "user", "content": user_input}]},
         config=config,
     )
-    return result["messages"][-1].content
+    reply = result["messages"][-1].content
+    logger.info(f"Email Agent response generated for thread_id '{thread_id}' | length: {len(reply)}")
+    return reply
+

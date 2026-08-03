@@ -74,14 +74,54 @@ def parse_indonesian_datetime(value: str) -> Optional[datetime]:
     )
 
 
+DAYS_ID = {
+    0: "Senin",
+    1: "Selasa",
+    2: "Rabu",
+    3: "Kamis",
+    4: "Jumat",
+    5: "Sabtu",
+    6: "Minggu",
+}
+
+MONTHS_ID = {
+    1: "Januari",
+    2: "Februari",
+    3: "Maret",
+    4: "April",
+    5: "Mei",
+    6: "Juni",
+    7: "Juli",
+    8: "Agustus",
+    9: "September",
+    10: "Oktober",
+    11: "November",
+    12: "Desember",
+}
+
+
+def format_indonesian_datetime(dt: Optional[datetime], include_seconds: bool = False) -> str:
+    """Format datetime into a clear Indonesian string (e.g. 'Minggu, 02 Agustus 2026 Pukul 20:26 WIB')."""
+    if not dt:
+        return "Baru saja"
+    day_name = DAYS_ID.get(dt.weekday(), "")
+    day_num = f"{dt.day:02d}"
+    month_name = MONTHS_ID.get(dt.month, "")
+    year = dt.year
+    time_fmt = "%H:%M:%S" if include_seconds else "%H:%M"
+    time_str = dt.strftime(time_fmt)
+    return f"{day_name}, {day_num} {month_name} {year} Pukul {time_str} WIB"
+
+
 class BaseCollector:
     def __init__(self, source: dict, session: Optional[requests.Session] = None):
         self.source = source
         self.session = session or requests.Session()
         self.session.headers.update(
             {
-                "User-Agent": settings.NEWS_USER_AGENT,
-                "Accept": "text/html,application/xhtml+xml",
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
+                "Accept-Language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7",
             }
         )
 
