@@ -158,10 +158,13 @@ def start_scheduler():
     _scheduler.start()
     logger.info(f"Background News Scheduler started. Running every {interval_seconds}.")
 
-    # Run an initial check immediately if configured
+    # Run an initial check in background thread if configured so it does not block FastAPI startup
     if settings.RUN_ON_STARTUP:
         try:
-            _scheduler.get_job("check_market_news_job").func()
+            import threading
+            job_func = _scheduler.get_job("check_market_news_job").func
+            threading.Thread(target=job_func, daemon=True).start()
+            logger.info("Triggered initial news check in background thread.")
         except Exception as e:
             logger.error(f"Initial news check failed on startup: {e}")
 
