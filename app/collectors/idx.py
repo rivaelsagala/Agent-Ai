@@ -44,7 +44,7 @@ class IDXCollector(BaseCollector):
         try:
             response = self.session.get(url, timeout=15)
             response.raise_for_status()
-            soup = BeautifulSoup(response.text, "xml")
+            soup = BeautifulSoup(response.text, "html.parser")
             items = []
             for node in soup.find_all("item"):
                 title_node = node.find("title")
