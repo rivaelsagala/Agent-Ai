@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: atlas_ai_backend
+    container_name: zimbo_ai_backend
     restart: unless-stopped
     ports:
       - "5000:5000"
@@ -15,4 +15,5 @@ services:
       - ./data:/app/data
     environment:
       - PORT=5000
-      - FLASK_RUN_HOST=0.0.0.0
+      - HOST=0.0.0.0
+

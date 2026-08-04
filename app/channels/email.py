@@ -13,7 +13,7 @@ class EmailChannel:
                 "to": destination,
                 "subject": channel_config.get(
                     "subject",
-                    "Atlas AI — Informasi Pasar Saham Indonesia",
+                    "Zimbo AI — Informasi Pasar Saham Indonesia",
                 ),
                 "body": message,
                 "cc": None,

@@ -13,7 +13,7 @@ from loguru import logger
 from app.llm import get_llm
 from app.services.tools.news_tools import NEWS_TOOLS
 
-SYSTEM_PROMPT = """Kamu adalah Asisten AI Analis Berita Pasar Saham & Ekonomi Indonesia (Atlas Market AI).
+SYSTEM_PROMPT = """Kamu adalah Asisten AI Analis Berita Pasar Saham & Ekonomi Indonesia (Zimbo Market AI).
 
 Tools yang kamu miliki:
 1. fetch_market_news: mengambil berita terbaru dari Bursa Efek Indonesia (IDX), Bank Indonesia (BI), atau OJK.

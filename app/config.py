@@ -52,7 +52,7 @@ class Settings:
     # News monitoring
     @property
     def NEWS_USER_AGENT(self) -> str:
-        return os.getenv("NEWS_USER_AGENT", "AtlasMarketNewsBot/1.0 (+contact: admin@localhost)")
+        return os.getenv("NEWS_USER_AGENT", "ZimboMarketNewsBot/1.0 (+contact: admin@localhost)")
 
     @property
     def NEWS_FETCH_TIMEOUT(self) -> float:

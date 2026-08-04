@@ -1,27 +1,26 @@
-# Atlas AI — Email Agent Backend
+# Zimbo AI — Autonomous Multi-Agent Backend
 
-Backend Python berbasis Flask dan LangGraph untuk asisten email. Agent dapat
-membuat draft, mengirim, membaca, mencari, dan menandai email melalui SMTP/IMAP.
+Backend Python berbasis **FastAPI** dan **LangGraph** untuk asisten email dan intelijen berita keuangan. Agent dapat mengumpulkan berita pasar, menganalisis sentimen, dispatch alert multi-channel (Telegram & Email), serta mengelola email via SMTP/IMAP.
 
 ## Arsitektur
 
 ```text
-HTTP request
+HTTP request / Swagger UI
     |
     v
-Flask route -> chat use case -> Email agent -> SMTP/IMAP tools
-                                  |
-                                  +-> MemorySaver per thread_id
+FastAPI APIRouter -> chat use case -> Multi-Agent System -> Tools (News/Email)
+                                        |
+                                        +-> MemorySaver per thread_id
 ```
 
 ## Tech stack
 
-- Flask untuk HTTP API
+- **FastAPI & Uvicorn** untuk High-Performance Asynchronous HTTP API & Swagger Docs
 - OpenRouter sebagai penyedia LLM
-- LangGraph untuk ReAct email agent dan memori percakapan
-- SMTP untuk mengirim email
-- IMAP untuk membaca dan mencari email
-- JSON store untuk riwayat chat sederhana
+- LangGraph & LangChain untuk ReAct agent dan memori percakapan
+- APScheduler untuk monitoring berita berkala (background worker 24/7)
+- Telegram Bot API & SMTP untuk pengiriman notifikasi/email
+- Loguru untuk structured logging
 
 ## Setup
 
@@ -30,8 +29,7 @@ pip install -r requirements.txt
 copy .env.example .env
 ```
 
-Isi kredensial OpenRouter, SMTP, dan IMAP di `.env`. Untuk Gmail dengan 2FA,
-gunakan App Password, bukan password akun biasa.
+Isi kredensial OpenRouter, Telegram, SMTP, dan IMAP di `.env`.
 
 ## Menjalankan
 
@@ -39,55 +37,38 @@ gunakan App Password, bukan password akun biasa.
 python run.py
 ```
 
-Server berjalan di `http://127.0.0.1:5000` secara default.
+Server berjalan di `http://127.0.0.1:5000`.
+Dokumentasi API Interaktif (Swagger UI) dapat diakses langsung di: **`http://127.0.0.1:5000/docs`**
 
 ## Endpoint API
 
 | Method | Path | Deskripsi |
 |--------|------|-----------|
+| GET | `/` | Root info |
 | GET | `/health` | Health check |
-| GET | `/api/agent/status` | Status agent dan model |
-| POST | `/api/agent/chat` | Menjalankan email agent |
+| GET | `/api/agent/status` | Status agent dan LLM model |
+| POST | `/api/agent/chat` | Menjalankan multi-agent chat |
+| POST | `/api/news/check-now` | Trigger manual monitoring berita & alert |
+| GET | `/api/news/sent` | Riwayat berita yang telah dikirim |
 
-Contoh request pertama:
-
-```bash
-curl -X POST http://127.0.0.1:5000/api/agent/chat ^
-  -H "Content-Type: application/json" ^
-  -d "{\"message\":\"Buatkan draft email untuk dosen saya\"}"
-```
-
-Respons mengandung `thread_id`. Kirim ID yang sama pada pesan berikutnya agar
-agent mengingat draft dan dapat memproses konfirmasi:
-
-```json
-{
-  "message": "Ya, kirim",
-  "thread_id": "thread-id-dari-respons-sebelumnya"
-}
-```
-
-## Testing
+Contoh request chat:
 
 ```bash
-python -m pytest tests/ -q
+curl -X POST http://127.0.0.1:5000/api/agent/chat \
+  -H "Content-Type: application/json" \
+  -d '{"message": "Cari berita pasar saham terbaru hari ini"}'
 ```
-
-Tes menggunakan mock sehingga tidak menghubungi OpenRouter, SMTP, atau IMAP.
 
 ## Struktur folder
 
 ```text
 app/
-  config.py, llm.py          # konfigurasi dan client LLM
-  routes.py, __init__.py     # Flask app factory dan endpoint
-  handler/                   # jembatan HTTP ke use case
-  usecases/                  # orkestrasi aplikasi
-  service/
-    agents/                  # email agent
-    tools/                   # SMTP/IMAP tools
-    database/                # JSON chat history
-data/
-  chat_history.json
-tests/
+  config.py, llm.py, logger.py # Konfigurasi, LLM client, & Loguru logger
+  routes.py, __init__.py     # FastAPI app factory, lifespan, & APIRouter
+  collectors/                # News Web Collectors (IDX, BI, OJK)
+  channels/                  # Multi-channel Telegram & Email handlers
+  handler/                   # Jembatan HTTP ke use cases
+  usecases/                  # Orkestrasi aplikasi & Agent runner
+  services/                  # Background APScheduler & Stores
 ```
+

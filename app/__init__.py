@@ -1,24 +1,33 @@
-import os
-from flask import Flask
+from contextlib import asynccontextmanager
+
+from fastapi import FastAPI
 from dotenv import load_dotenv
 
 from app.logger import logger
-from app.routes import bp
+from app.routes import router
 from app.services.scheduler import start_scheduler
 
 load_dotenv()
 
 
-def create_app():
-    logger.info("Initializing Flask application...")
-    app = Flask(__name__)
-    app.register_blueprint(bp)
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logger.info("Initializing FastAPI application...")
+    logger.info("Triggering background scheduler startup...")
+    start_scheduler()
+    logger.info("FastAPI application initialized successfully.")
+    yield
+    logger.info("Shutting down FastAPI application...")
 
-    # Start background scheduler for automatic periodic news monitoring
-    if not app.debug or os.environ.get("WERKZEUG_RUN_MAIN") == "true":
-        logger.info("Triggering background scheduler startup...")
-        start_scheduler()
 
-    logger.info("Flask application initialized successfully.")
+def create_app() -> FastAPI:
+    app = FastAPI(
+        title="Zimbo AI Server",
+        description="Autonomous ReAct Multi-Agent Backend for Financial Market Intelligence & Multi-Channel Alerting",
+        version="1.0.0",
+        lifespan=lifespan,
+    )
+    app.include_router(router)
     return app
+
 
