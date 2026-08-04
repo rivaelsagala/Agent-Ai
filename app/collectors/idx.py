@@ -1,5 +1,4 @@
-"""Collectors for Indonesia Stock Exchange public news pages."""
-import re
+"""Collectors for Indonesia Stock Exchange news via IDX Channel RSS feed."""
 from typing import List
 
 from app.collectors.base import BaseCollector, normalize_text, parse_indonesian_datetime
@@ -9,42 +8,16 @@ from bs4 import BeautifulSoup
 from email.utils import parsedate_to_datetime
 from loguru import logger
 
-TICKER_PATTERN = re.compile(r"\[([A-Z0-9-]{2,15})\]")
-IGNORED_HEADINGS = {
-    "keterbukaan informasi",
-    "pengumuman",
-    "laporan keuangan",
-    "berita",
-    "siaran pers",
-    "loading...",
-}
-
 
 class IDXCollector(BaseCollector):
     def collect(self) -> List[CollectedNews]:
-        url = self.source["base_url"]
-        logger.debug(f"IDXCollector fetching from primary URL: {url}")
-        try:
-            resp = self.session.get(url, timeout=5)
-            resp.raise_for_status()
-            items = self.parse(resp.text)
-            if items:
-                logger.info(f"IDXCollector parsed {len(items)} items from primary URL: {url}")
-                return items
-            logger.warning(f"No items parsed from primary URL {url}, falling back to IDX Channel RSS feed...")
-            return self._fetch_fallback_rss()
-        except Exception as e:
-            logger.warning(f"Primary URL {url} fetch failed ({e}), initiating fallback to IDX Channel RSS feed...")
-            return self._fetch_fallback_rss()
-
-    def _fetch_fallback_rss(self) -> List[CollectedNews]:
-        """Fallback to official IDX Channel RSS feed if idx.co.id is blocked by Cloudflare (403)."""
+        """Fetch news directly from IDX Channel RSS feed (idx.co.id diblokir Cloudflare 403)."""
         url = "https://www.idxchannel.com/rss"
-        logger.info(f"Fetching fallback RSS feed from: {url}")
+        logger.info(f"IDXCollector fetching RSS feed from: {url}")
         try:
             response = self.session.get(url, timeout=15)
             response.raise_for_status()
-            soup = BeautifulSoup(response.text, "html.parser")
+            soup = BeautifulSoup(response.text, "xml")
             items = []
             for node in soup.find_all("item"):
                 title_node = node.find("title")
@@ -78,96 +51,5 @@ class IDXCollector(BaseCollector):
             logger.info(f"Successfully collected {len(res)} items from IDX Channel RSS feed.")
             return res
         except Exception as e:
-            logger.error(f"Fallback RSS fetch failed: {e}")
+            logger.error(f"IDXCollector RSS fetch failed: {e}")
             return []
-
-
-    def parse(self, html: str) -> List[CollectedNews]:
-        if self.source["source_type"] == "idx_disclosure":
-            return self._parse_disclosures(html)
-        return self._parse_news(html)
-
-    def _parse_disclosures(self, html: str) -> List[CollectedNews]:
-        soup = self.soup(html)
-        items = []
-        for heading in soup.find_all(["h4", "h5", "h6"]):
-            title = normalize_text(heading.get_text(" ", strip=True))
-            if len(title) < 12 or title.lower() in IGNORED_HEADINGS:
-                continue
-
-            container = heading.parent
-            container_text = normalize_text(container.get_text(" ", strip=True))
-            published_at = parse_indonesian_datetime(container_text)
-            if not published_at:
-                previous_text = " ".join(
-                    normalize_text(node.get_text(" ", strip=True))
-                    for node in heading.find_all_previous(limit=3)
-                )
-                published_at = parse_indonesian_datetime(previous_text)
-            if not published_at:
-                continue
-
-            link = container.find("a", href=True)
-            tickers = TICKER_PATTERN.findall(title)
-            items.append(
-                self.make_item(
-                    title=title,
-                    published_at=published_at,
-                    href=link["href"] if link else "",
-                    excerpt=container_text,
-                    metadata={"tickers": tickers, "kind": "disclosure"},
-                )
-            )
-        return self.unique(items)
-
-    def _parse_news(self, html: str) -> List[CollectedNews]:
-        soup = self.soup(html)
-        items = []
-        for row in soup.find_all("tr"):
-            text = normalize_text(row.get_text(" ", strip=True))
-            published_at = parse_indonesian_datetime(text)
-            link = row.find("a", href=True)
-            if not published_at or not link:
-                continue
-            title = normalize_text(link.get_text(" ", strip=True))
-            if len(title) < 15 or title.lower() in {"lihat detail", "detail"}:
-                cell_texts = [
-                    normalize_text(cell.get_text(" ", strip=True))
-                    for cell in row.find_all(["td", "th"])
-                ]
-                candidates = [
-                    value
-                    for value in cell_texts
-                    if len(value) >= 15 and not parse_indonesian_datetime(value)
-                ]
-                title = max(candidates, key=len, default="")
-            if len(title) < 12:
-                continue
-            items.append(
-                self.make_item(
-                    title=title,
-                    published_at=published_at,
-                    href=link["href"],
-                    excerpt=text,
-                    metadata={"kind": "idx_news"},
-                )
-            )
-
-        if items:
-            return self.unique(items)
-
-        for link in soup.find_all("a", href=True):
-            title = normalize_text(link.get_text(" ", strip=True))
-            parent_text = normalize_text(link.parent.get_text(" ", strip=True))
-            published_at = parse_indonesian_datetime(parent_text)
-            if len(title) >= 20 and published_at:
-                items.append(
-                    self.make_item(
-                        title=title,
-                        published_at=published_at,
-                        href=link["href"],
-                        excerpt=parent_text,
-                        metadata={"kind": "idx_news"},
-                    )
-                )
-        return self.unique(items)
