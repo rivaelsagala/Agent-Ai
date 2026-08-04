@@ -2684,5 +2684,145 @@
       "jam": "08:29:45 WIB",
       "sent_at_iso": "2026-08-04T08:29:45.426574"
     }
+  },
+  {
+    "url": "https://www.idxchannel.com/technology/nissan-catat-laba-bersih-kuartalan-pertama-dalam-2-tahun",
+    "title": "Nissan Catat Laba Bersih Kuartalan Pertama dalam 2 Tahun",
+    "external_id": "8bf5fe5ce15cf4e9e38ea4423b863152",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:34:33 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Nissan berhasil mencatat laba bersih kuartalan pertama dalam dua tahun, menunjukkan pemulihan kinerja keuangan perusahaan.",
+      "impact_reason": "Kinerja positif Nissan dapat meningkatkan kepercayaan investor dan berdampak baik pada sektor otomotif, yang mungkin mempengaruhi emiten terkait di Indonesia, meskipun tidak ada emiten spesifik yang disebutkan.",
+      "category": "Industri",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:34:33 WIB",
+      "sent_at_iso": "2026-08-04T08:34:33.925735"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/merdeka-mdka-raih-penjualan-rp14-triliun-di-kuartal-ii-2026",
+    "title": "Merdeka (MDKA) Raih Penjualan Rp14 Triliun di Kuartal II-2026",
+    "external_id": "3edf2b807cda38bfedd03070935ce295",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:34:38 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "PT Merdeka Copper Gold Tbk (MDKA) mencatatkan pendapatan yang signifikan sebesar Rp14 triliun pada kuartal II-2026.",
+      "impact_reason": "Pencapaian penjualan yang tinggi menunjukkan kinerja keuangan yang kuat dan potensi pertumbuhan yang baik bagi MDKA, yang dapat meningkatkan kepercayaan investor dan mendorong harga saham naik.",
+      "category": "Emiten",
+      "impact_level": 4,
+      "sentiment_score": 0.8,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "MDKA"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:34:38 WIB",
+      "sent_at_iso": "2026-08-04T08:34:38.224372"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/harga-emas-menguat-pasar-cermati-risiko-inflasi-dan-data-tenaga-kerja-as",
+    "title": "Harga Emas Menguat, Pasar Cermati Risiko Inflasi dan Data Tenaga Kerja AS",
+    "external_id": "eefeac4d7b6e00b20a1ced744475ee13",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:34:41 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Harga emas mengalami penguatan, sementara pasar saham Indonesia memperhatikan risiko inflasi dan data tenaga kerja di AS.",
+      "impact_reason": "Penguatan harga emas dapat menunjukkan ketidakpastian ekonomi yang lebih tinggi, yang biasanya berdampak negatif pada pasar saham. Investor mungkin lebih memilih aset aman seperti emas, sehingga mengurangi minat pada saham.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": -0.3,
+      "dampak": "Buruk (Negatif \ud83d\udcc9)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:34:41 WIB",
+      "sent_at_iso": "2026-08-04T08:34:41.499073"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/harga-minyak-jatuh-7-persen-ke-level-terendah-3-pekan",
+    "title": "Harga Minyak Jatuh 7 Persen ke Level Terendah 3 Pekan",
+    "external_id": "078f98e70aa4c1ec0ef027c0fbc92be2",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:34:45 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Harga minyak mengalami penurunan signifikan sebesar 7 persen, mencapai level terendah dalam tiga pekan terakhir.",
+      "impact_reason": "Penurunan harga minyak dapat berdampak negatif pada emiten yang bergantung pada sektor energi dan minyak, namun dapat memberikan dampak positif bagi sektor transportasi dan industri yang menggunakan bahan bakar, sehingga dampaknya bervariasi tergantung pada sektor.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": -0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:34:45 WIB",
+      "sent_at_iso": "2026-08-04T08:34:45.558299"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/musim-laporan-keuangan-semester-i-2026-bawa-angin-segar-ke-pasar",
+    "title": "Musim Laporan Keuangan Semester I-2026 Bawa Angin Segar ke Pasar",
+    "external_id": "bc0909852ab7ebba2feaa6e2c09faee7",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:34:49 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Musim laporan keuangan semester I-2026 diperkirakan memberikan dampak positif bagi pasar saham Indonesia.",
+      "impact_reason": "Laporan keuangan yang baik menunjukkan kinerja perusahaan yang solid, meningkatkan kepercayaan investor dan mendorong kenaikan harga saham.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:34:49 WIB",
+      "sent_at_iso": "2026-08-04T08:34:49.076545"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/prabowo-jamu-pm-thailand-di-istana-suguhkan-wayang-kulit-hingga-tari-ramayana",
+    "title": "Prabowo Jamu PM Thailand di Istana, Suguhkan Wayang Kulit hingga Tari Ramayana",
+    "external_id": "bdad8dc4b4ce839faac2c358f786e567",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:44:28 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Presiden RI Prabowo Subianto menggelar jamuan resmi untuk PM Thailand, yang menunjukkan hubungan diplomatik yang baik antara kedua negara.",
+      "impact_reason": "Acara ini dapat meningkatkan hubungan bilateral dan potensi kerjasama ekonomi antara Indonesia dan Thailand, yang dapat berdampak positif bagi pasar saham dan emiten yang terlibat dalam perdagangan dan investasi.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:44:28 WIB",
+      "sent_at_iso": "2026-08-04T08:44:28.278930"
+    }
   }
 ]

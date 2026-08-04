@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 from app.logger import logger
 from app.routes import router
-from app.services.scheduler import start_scheduler
+from app.services.scheduler import start_scheduler, stop_scheduler
 
 load_dotenv()
 
@@ -18,6 +18,7 @@ async def lifespan(app: FastAPI):
     logger.info("FastAPI application initialized successfully.")
     yield
     logger.info("Shutting down FastAPI application...")
+    stop_scheduler()
 
 
 def create_app() -> FastAPI:
