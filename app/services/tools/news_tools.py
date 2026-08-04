@@ -40,6 +40,12 @@ OFFICIAL_SOURCES = [
         "source_type": "ojk",
         "base_url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/default.aspx",
     },
+    {
+        "code": "bloomberg",
+        "name": "Bloomberg (Markets & Economics)",
+        "source_type": "bloomberg",
+        "base_url": "https://feeds.bloomberg.com/markets/news.rss",
+    },
 ]
 
 

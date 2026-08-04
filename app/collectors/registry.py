@@ -1,5 +1,6 @@
 """Map database source types to collector implementations."""
 from app.collectors.bi import BICollector
+from app.collectors.bloomberg import BloombergCollector
 from app.collectors.idx import IDXCollector
 from app.collectors.ojk import OJKCollector
 
@@ -10,6 +11,7 @@ class CollectorRegistry:
         "idx_news": IDXCollector,
         "ojk": OJKCollector,
         "bank_indonesia": BICollector,
+        "bloomberg": BloombergCollector,
     }
 
     def create(self, source: dict):

@@ -2824,5 +2824,329 @@
       "jam": "08:44:28 WIB",
       "sent_at_iso": "2026-08-04T08:44:28.278930"
     }
+  },
+  {
+    "url": "https://www.idxchannel.com/economics/bursa-mineral-beroperasi-1-januari-2027-prabowo-bakal-pilih-pimpinan-pengawasnya",
+    "title": "Bursa Mineral Beroperasi 1 Januari 2027, Prabowo Bakal Pilih Pimpinan Pengawasnya",
+    "external_id": "6fdb64b37db44edd7af860a64d1c29a6",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:22:28 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Bursa Mineral di Indonesia dijadwalkan mulai beroperasi pada 1 Januari 2027, dengan Prabowo Subianto yang akan memilih pimpinan pengawasnya.",
+      "impact_reason": "Pembentukan Bursa Mineral dapat meningkatkan transparansi dan efisiensi dalam sektor pertambangan, yang berpotensi menarik investasi dan meningkatkan nilai saham perusahaan-perusahaan di sektor ini.",
+      "category": "Regulasi",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:22:28 WIB",
+      "sent_at_iso": "2026-08-04T23:22:28.297968"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/pramono-yakin-jakarta-tetap-kondusif-sepanjang-agustus",
+    "title": "Pramono Yakin Jakarta Tetap Kondusif Sepanjang Agustus",
+    "external_id": "3736d7a0354ec1d63a4bce9acccc0c69",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:22:31 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Gubernur DKI Jakarta, Pramono, menyatakan keyakinannya bahwa situasi di Jakarta akan tetap kondusif sepanjang bulan Agustus.",
+      "impact_reason": "Kondisi yang kondusif di Jakarta dapat meningkatkan kepercayaan investor dan stabilitas pasar, yang berpotensi mendukung pertumbuhan ekonomi dan kinerja emiten di wilayah tersebut.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:22:31 WIB",
+      "sent_at_iso": "2026-08-04T23:22:31.563721"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/sekolah-di-singapura-lebih-murah-begini-respons-mendikdasmen",
+    "title": "Sekolah di Singapura Lebih Murah, Begini Respons Mendikdasmen",
+    "external_id": "4461a84ec26eba4c0927e759a1ca1c83",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:22:36 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Berita mengenai perbandingan biaya sekolah di Singapura dan respons Mendikdasmen dapat mempengaruhi persepsi masyarakat terhadap pendidikan di Indonesia.",
+      "impact_reason": "Berita ini dapat berdampak netral karena tidak secara langsung mempengaruhi emiten atau pasar saham, tetapi lebih kepada isu sosial dan pendidikan.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.0,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:22:36 WIB",
+      "sent_at_iso": "2026-08-04T23:22:36.837781"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/economics/ojk-terima-1379-aduan-kasus-penipuan-berbasis-ai",
+    "title": "OJK Terima 1.379 Aduan Kasus Penipuan Berbasis AI",
+    "external_id": "1b78ddb9838e4910b8fa5f37c59354c7",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:22:40 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "OJK menerima 1.379 aduan terkait kasus penipuan yang menggunakan teknologi AI, menunjukkan meningkatnya risiko bagi investor.",
+      "impact_reason": "Peningkatan kasus penipuan berbasis AI dapat menurunkan kepercayaan investor terhadap pasar saham, yang berpotensi berdampak negatif pada likuiditas dan aktivitas perdagangan.",
+      "category": "Regulasi",
+      "impact_level": 2,
+      "sentiment_score": -0.4,
+      "dampak": "Buruk (Negatif \ud83d\udcc9)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:22:40 WIB",
+      "sent_at_iso": "2026-08-04T23:22:40.194916"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/economics/penjualan-mobil-juni-tumbuh-32-persen-purbaya-bukti-permintaan-dan-daya-beli-terjaga",
+    "title": "Penjualan Mobil Juni Tumbuh 32 Persen, Purbaya: Bukti Permintaan dan Daya Beli Terjaga",
+    "external_id": "abf762255cf981d296c62a5825bc0e9a",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:22:43 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Penjualan mobil di Indonesia mengalami pertumbuhan sebesar 32 persen pada bulan Juni, menunjukkan bahwa permintaan dan daya beli masyarakat tetap terjaga.",
+      "impact_reason": "Pertumbuhan penjualan mobil yang signifikan mencerminkan kekuatan ekonomi domestik dan daya beli konsumen yang baik, yang dapat berdampak positif pada sektor otomotif dan emiten terkait.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:22:43 WIB",
+      "sent_at_iso": "2026-08-04T23:22:43.508593"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/lebih-selektif-pilih-rekanan-marjin-laba-arsy-buana-hajj-melonjak-4061-persen",
+    "title": "Lebih Selektif Pilih Rekanan, Marjin Laba Arsy Buana (HAJJ) Melonjak 40,61 Persen",
+    "external_id": "2748b01b693b6d08dfcd5c640f78a825",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:27:23 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Arsy Buana (HAJJ) mengalami lonjakan marjin laba sebesar 40,61 persen setelah lebih selektif dalam memilih rekanan.",
+      "impact_reason": "Peningkatan marjin laba menunjukkan efisiensi operasional yang lebih baik dan potensi pertumbuhan yang positif bagi perusahaan, yang dapat menarik minat investor.",
+      "category": "Emiten",
+      "impact_level": 4,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "HAJJ"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:27:23 WIB",
+      "sent_at_iso": "2026-08-04T23:27:23.770862"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/eks-jampidsus-febrie-mau-gugat-praperadilan-ini-respons-kejagung",
+    "title": "Eks Jampidsus Febrie Mau Gugat Praperadilan, Ini Respons Kejagung",
+    "external_id": "cc32445140dd3ac21f0eb168ca5c9d1c",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:27:41 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Eks Jampidsus Febrie berencana untuk menggugat praperadilan, yang memicu respons dari Kejaksaan Agung.",
+      "impact_reason": "Berita ini lebih bersifat hukum dan tidak langsung mempengaruhi pasar saham atau emiten tertentu, sehingga dampaknya dianggap netral.",
+      "category": "Regulasi",
+      "impact_level": 2,
+      "sentiment_score": 0.0,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:27:41 WIB",
+      "sent_at_iso": "2026-08-04T23:27:41.810882"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/mendikdasmen-beberkan-penyebab-banyak-sekolah-kekurangan-murid",
+    "title": "Mendikdasmen Beberkan Penyebab Banyak Sekolah Kekurangan Murid",
+    "external_id": "cbcb75363169ab63972dd14974c60d12",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:27:46 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Mendikdasmen mengungkapkan bahwa banyak sekolah mengalami kekurangan murid, yang dapat mempengaruhi pendapatan dan keberlangsungan operasional sekolah.",
+      "impact_reason": "Kekurangan murid di sekolah dapat berdampak negatif pada pendapatan institusi pendidikan, yang pada gilirannya dapat mempengaruhi sektor terkait seperti penyedia layanan pendidikan dan infrastruktur. Hal ini dapat menyebabkan penurunan permintaan untuk saham emiten yang beroperasi di sektor pendidikan.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": -0.3,
+      "dampak": "Buruk (Negatif \ud83d\udcc9)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:27:46 WIB",
+      "sent_at_iso": "2026-08-04T23:27:46.811640"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/polri-gelar-ekspedisi-merah-putih-presisi-bawa-bantuan-hingga-perkuat-polsek",
+    "title": "Polri Gelar Ekspedisi Merah Putih Presisi, Bawa Bantuan hingga Perkuat Polsek",
+    "external_id": "2284f391a419dfb0b28793e1c6c60714",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:27:50 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Polri melaksanakan Ekspedisi Merah Putih Presisi untuk memberikan bantuan dan memperkuat keberadaan Polsek di daerah-daerah.",
+      "impact_reason": "Kegiatan ini dapat meningkatkan kepercayaan masyarakat terhadap institusi kepolisian, yang pada gilirannya dapat menciptakan stabilitas sosial dan ekonomi, meskipun tidak langsung berdampak pada emiten tertentu.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:27:50 WIB",
+      "sent_at_iso": "2026-08-04T23:27:50.380014"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/manfaatkan-ai-fasilitas-ini-bantu-investor-pahami-kondisi-pasar-70-persen-lebih-cepat",
+    "title": "Manfaatkan AI, Fasilitas Ini Bantu Investor Pahami Kondisi Pasar 70 Persen Lebih Cepat",
+    "external_id": "67043814ff540a3a4502afd0c1f93af2",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:27:54 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Fasilitas berbasis AI membantu investor memahami kondisi pasar dengan lebih cepat, meningkatkan efisiensi dalam pengambilan keputusan investasi.",
+      "impact_reason": "Penggunaan teknologi AI dalam analisis pasar dapat meningkatkan kepercayaan investor dan mendorong aktivitas perdagangan, yang berpotensi berdampak positif pada likuiditas dan nilai saham di pasar.",
+      "category": "Industri",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:27:54 WIB",
+      "sent_at_iso": "2026-08-04T23:27:54.844666"
+    }
+  },
+  {
+    "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2814926.aspx",
+    "title": "BI Dorong Kerangka Kebijakan Terintegrasi Hadapi Fragmentasi Global dan Transformasi Digital",
+    "external_id": "1cfd061e2121009a751e8c31a025b76c",
+    "source": "Bank Indonesia (Siaran Pers)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:32:21 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Bank Indonesia mendorong kerangka kebijakan terintegrasi untuk menghadapi tantangan global dan transformasi digital.",
+      "impact_reason": "Inisiatif ini dapat meningkatkan stabilitas ekonomi dan kepercayaan investor, yang pada gilirannya dapat mendukung pertumbuhan pasar saham dan emiten di sektor teknologi dan keuangan.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:32:21 WIB",
+      "sent_at_iso": "2026-08-04T23:32:21.279625"
+    }
+  },
+  {
+    "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/RDKB-Juli-2026.aspx",
+    "title": "Siaran Pers: Stabilitas Sektor Jasa Keuangan Terjaga Mendukung Pengembangan dan Penguatan Sektor Keuangan",
+    "external_id": "6c9b159d674489c8bcc0f8b27672baa5",
+    "source": "Otoritas Jasa Keuangan (Siaran Pers)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:32:26 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Sektor Jasa Keuangan Indonesia menunjukkan stabilitas yang baik meskipun ada ketidakpastian geopolitik dan tekanan inflasi, mendukung pengembangan sektor keuangan.",
+      "impact_reason": "Stabilitas sektor jasa keuangan dapat meningkatkan kepercayaan investor dan mendorong pertumbuhan ekonomi, yang berdampak positif bagi emiten di sektor ini.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:32:26 WIB",
+      "sent_at_iso": "2026-08-04T23:32:26.206630"
+    }
+  },
+  {
+    "url": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/KSSK-Agustus-2026.aspx",
+    "title": "Siaran Pers Bersama: Stabilitas Sistem Keuangan Nasional Tetap Terjaga, Didukung Koordinasi dan Sinergi Kebijakan Antarotoritas, untuk Mendukung Momentum Pertumbuhan Ekonomi",
+    "external_id": "01d723a0b7ef301e1a8e28cb00def587",
+    "source": "Otoritas Jasa Keuangan (Siaran Pers)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:32:29 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Stabilitas sistem keuangan nasional Indonesia tetap terjaga berkat koordinasi kebijakan antarotoritas, mendukung pertumbuhan ekonomi di tengah tantangan global.",
+      "impact_reason": "Kondisi fiskal dan moneter yang stabil serta sinergi antarotoritas memberikan kepercayaan kepada investor, yang dapat mendorong investasi dan pertumbuhan pasar saham.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:32:29 WIB",
+      "sent_at_iso": "2026-08-04T23:32:29.526583"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/banking/ojk-catat-outstanding-pindar-tembus-rp105-triliun-pada-juni-2026",
+    "title": "OJK Catat Outstanding Pindar Tembus Rp105 Triliun pada Juni 2026",
+    "external_id": "240ccf3f6b01ddb5a3464f70a0b40856",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 23:37:15 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "OJK mencatat bahwa outstanding pinjaman digital (pindar) mencapai Rp105 triliun pada Juni 2026, menunjukkan pertumbuhan signifikan dalam sektor pinjaman digital.",
+      "impact_reason": "Pertumbuhan outstanding pinjaman digital dapat meningkatkan kepercayaan investor dan mendorong pertumbuhan sektor keuangan, yang berdampak positif bagi emiten di sektor perbankan dan teknologi finansial.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "23:37:15 WIB",
+      "sent_at_iso": "2026-08-04T23:37:15.562485"
+    }
   }
 ]
