@@ -52,7 +52,7 @@ def configure_logger():
     logging.basicConfig(handlers=[InterceptHandler()], level=0, force=True)
 
     # Set specific third-party logger levels to avoid excessive noise
-    for noisy in ["urllib3", "apscheduler.scheduler", "apscheduler.executors.default", "werkzeug"]:
+    for noisy in ["urllib3", "apscheduler.scheduler", "apscheduler.executors.default", "uvicorn", "uvicorn.error", "uvicorn.access"]:
         logging.getLogger(noisy).setLevel(logging.WARNING)
 
     logger.info("Loguru logging system initialized and active.")

@@ -2400,5 +2400,289 @@
       "jam": "19:23:02 WIB",
       "sent_at_iso": "2026-08-03T19:23:02.361692"
     }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/ketika-prabowo-jelaskan-ke-pm-thailand-jika-ibu-kota-indonesia-bukan-bali",
+    "title": "Ketika Prabowo Jelaskan ke PM Thailand Jika Ibu Kota Indonesia Bukan Bali",
+    "external_id": "f993d9e9fee6b105925f179a8dab0810",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 19:47:43 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Prabowo menjelaskan kepada PM Thailand bahwa ibu kota Indonesia bukan Bali, yang menunjukkan upaya diplomasi dan pengenalan Indonesia yang lebih luas.",
+      "impact_reason": "Berita ini menunjukkan upaya pemerintah dalam memperkenalkan Indonesia secara internasional, yang dapat meningkatkan citra negara dan menarik investasi, meskipun tidak langsung berdampak pada emiten tertentu.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.4,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "19:47:43 WIB",
+      "sent_at_iso": "2026-08-03T19:47:43.346312"
+    }
+  },
+  {
+    "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2814726.aspx",
+    "title": "Neraca Perdagangan Juni 2026 Mencatat Defisit yang Lebih Rendah",
+    "external_id": "719074d766d351bb64c249079b1562b7",
+    "source": "Bank Indonesia (Siaran Pers)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 19:47:47 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Neraca perdagangan Indonesia untuk bulan Juni 2026 menunjukkan defisit yang lebih rendah, menandakan perbaikan dalam kondisi ekonomi.",
+      "impact_reason": "Defisit neraca perdagangan yang lebih rendah dapat meningkatkan kepercayaan investor dan stabilitas nilai tukar, yang berdampak positif bagi pasar saham secara keseluruhan.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "19:47:47 WIB",
+      "sent_at_iso": "2026-08-03T19:47:47.464622"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/polri-buka-suara-terkait-mal-di-indonesia-pasang-pagar-tinggi",
+    "title": "Polri Buka Suara Terkait Mal di Indonesia Pasang Pagar Tinggi",
+    "external_id": "e0e734f6b5f8d1c5123b2943973d551d",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 20:32:37 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Polri memberikan tanggapan mengenai pemasangan pagar tinggi di mal-mal di Indonesia, yang dapat mempengaruhi aspek keamanan dan kenyamanan pengunjung.",
+      "impact_reason": "Pemasangan pagar tinggi di mal dapat meningkatkan persepsi keamanan, yang berpotensi menarik lebih banyak pengunjung dan meningkatkan pendapatan bagi pengelola mal. Namun, dampak ini bersifat jangka panjang dan tergantung pada implementasi dan respons masyarakat.",
+      "category": "Industri",
+      "impact_level": 2,
+      "sentiment_score": 0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "20:32:37 WIB",
+      "sent_at_iso": "2026-08-03T20:32:37.011501"
+    }
+  },
+  {
+    "url": "https://www.bi.go.id/id/publikasi/ruang-media/news-release/Pages/sp_2814826.aspx",
+    "title": "IHK Juli 2026 Tetap Terjaga",
+    "external_id": "5b710025b6e51c8debb933bcdd095b78",
+    "source": "Bank Indonesia (Siaran Pers)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 20:37:42 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Indeks Harga Konsumen (IHK) pada Juli 2026 tetap terjaga, menunjukkan stabilitas inflasi di Indonesia.",
+      "impact_reason": "Stabilitas IHK dapat memberikan kepercayaan kepada investor dan konsumen, yang berpotensi mendukung pertumbuhan ekonomi dan kinerja pasar saham secara keseluruhan.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.6,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "20:37:42 WIB",
+      "sent_at_iso": "2026-08-03T20:37:42.234166"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/fokus-pada-produk-china-kobexindo-kobx-kantongi-pendapatan-rp102-triliun",
+    "title": "Fokus Pada Produk China, Kobexindo (KOBX) Kantongi Pendapatan Rp1,02 Triliun",
+    "external_id": "734098625da55583eb58c4aa5a170460",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 20:42:49 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Kobexindo (KOBX) berhasil mencatatkan pendapatan sebesar Rp1,02 triliun dengan fokus pada produk dari China.",
+      "impact_reason": "Pendapatan yang signifikan menunjukkan kinerja yang baik dari Kobexindo, yang dapat meningkatkan kepercayaan investor dan potensi pertumbuhan di masa depan.",
+      "category": "Emiten",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "KOBX"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "20:42:49 WIB",
+      "sent_at_iso": "2026-08-03T20:42:49.326184"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/ditopang-bisnis-sewa-menara-mitratel-mtel-kantongi-pendapatan-hingga-rp469-triliun",
+    "title": "Ditopang Bisnis Sewa Menara, Mitratel (MTEL) Kantongi Pendapatan hingga Rp4,69 Triliun",
+    "external_id": "a78d6ef37ffff36526f037828efa846f",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 20:57:35 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Mitratel (MTEL) mencatatkan pendapatan sebesar Rp4,69 triliun yang didorong oleh bisnis sewa menara.",
+      "impact_reason": "Pendapatan yang meningkat menunjukkan kinerja yang baik dari Mitratel, yang dapat meningkatkan kepercayaan investor dan potensi pertumbuhan di masa depan.",
+      "category": "Emiten",
+      "impact_level": 4,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "MTEL"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "20:57:35 WIB",
+      "sent_at_iso": "2026-08-03T20:57:35.004392"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/dpr-minta-pemerintah-tindaklanjuti-putusan-mk-soal-mbg-mulai-2027",
+    "title": "DPR Minta Pemerintah Tindaklanjuti Putusan MK soal MBG Mulai 2027",
+    "external_id": "2f0f8b6d507ef1bd0048081edc2980b9",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Senin, 03 Agustus 2026 Pukul 21:17:34 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "DPR meminta pemerintah untuk menindaklanjuti putusan Mahkamah Konstitusi mengenai MBG yang akan mulai berlaku pada tahun 2027.",
+      "impact_reason": "Putusan ini dapat mempengaruhi kebijakan investasi dan regulasi di sektor terkait, namun dampaknya terhadap pasar saham saat ini masih bersifat spekulatif dan belum terlihat jelas.",
+      "category": "Regulasi",
+      "impact_level": 2,
+      "sentiment_score": 0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Senin",
+      "tanggal": "03 Agustus 2026",
+      "jam": "21:17:34 WIB",
+      "sent_at_iso": "2026-08-03T21:17:34.318527"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/waskita-wskt-bangun-5-sekolah-rakyat-di-jatim-senilai-rp116-triliun",
+    "title": "Waskita (WSKT) Bangun 5 Sekolah Rakyat di Jatim Senilai Rp1,16 Triliun",
+    "external_id": "bd7192d1bb76cca4cb831dafe6e675b5",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:29:28 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "PT Waskita Karya (WSKT) sedang mengerjakan proyek pembangunan lima Sekolah Rakyat di Jawa Timur dengan total nilai Rp1,16 triliun.",
+      "impact_reason": "Proyek pembangunan ini dapat meningkatkan pendapatan dan reputasi WSKT, serta berkontribusi positif terhadap sektor pendidikan di Indonesia.",
+      "category": "Industri",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "WSKT"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:29:28 WIB",
+      "sent_at_iso": "2026-08-04T08:29:28.868200"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/economics/inflasi-terjaga-hingga-manufaktur-ekspansif-airlangga-optimistis-ekonomi-ri-tetap-solid",
+    "title": "Inflasi Terjaga hingga Manufaktur Ekspansif, Airlangga Optimistis Ekonomi RI Tetap Solid",
+    "external_id": "713415c43d33a6ee4ce2b4847564e482",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:29:33 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Menko Perekonomian Airlangga Hartarto menyatakan bahwa inflasi terjaga dan sektor manufaktur menunjukkan ekspansi, yang mencerminkan optimisme terhadap kekuatan ekonomi Indonesia.",
+      "impact_reason": "Kondisi inflasi yang terjaga dan pertumbuhan sektor manufaktur yang positif dapat meningkatkan kepercayaan investor dan mendorong pertumbuhan ekonomi, yang berdampak baik bagi pasar saham.",
+      "category": "Makroekonomi",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:29:33 WIB",
+      "sent_at_iso": "2026-08-04T08:29:33.234995"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/market-news/bakrie-plantations-unsp-raup-penjualan-rp128-triliun-berkat-kenaikan-harga-cpo",
+    "title": "Bakrie Plantations (UNSP) Raup Penjualan Rp1,28 Triliun Berkat Kenaikan Harga CPO",
+    "external_id": "068c12f23e2d11772af2fd0064dbe50c",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:29:37 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "PT Bakrie Sumatera Plantations Tbk (UNSP) mencatatkan penjualan sebesar Rp1,28 triliun pada semester I-2026, meningkat 12 persen berkat kenaikan harga CPO.",
+      "impact_reason": "Kenaikan harga CPO secara langsung meningkatkan pendapatan UNSP, yang menunjukkan kinerja keuangan yang lebih baik dan potensi pertumbuhan yang positif di masa depan.",
+      "category": "Emiten",
+      "impact_level": 3,
+      "sentiment_score": 0.7,
+      "dampak": "Baik (Positif \ud83d\udcc8)",
+      "tickers": [
+        "UNSP"
+      ]
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:29:37 WIB",
+      "sent_at_iso": "2026-08-04T08:29:37.268462"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/economics/donald-trump-kritik-exxon-dan-chevron-usai-raup-untung-besar-dari-perang-as-iran",
+    "title": "Donald Trump Kritik Exxon dan Chevron usai Raup Untung Besar dari Perang AS-Iran",
+    "external_id": "6ea028de0801baaa78795308e5ed0baf",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:29:41 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Donald Trump mengkritik ExxonMobil dan Chevron karena dianggap meraup keuntungan besar dari tingginya harga BBM akibat perang AS-Iran.",
+      "impact_reason": "Kritik terhadap perusahaan energi besar seperti Exxon dan Chevron dapat mempengaruhi sentimen pasar terhadap sektor energi secara global, termasuk di Indonesia, meskipun tidak ada dampak langsung pada emiten lokal.",
+      "category": "Industri",
+      "impact_level": 2,
+      "sentiment_score": 0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:29:41 WIB",
+      "sent_at_iso": "2026-08-04T08:29:41.491568"
+    }
+  },
+  {
+    "url": "https://www.idxchannel.com/news/prabowo-ingin-tingkatkan-kerja-sama-pertahanan-dengan-thailand",
+    "title": "Prabowo Ingin Tingkatkan Kerja Sama Pertahanan dengan Thailand",
+    "external_id": "b319c557df6f4c82902d264fbe370ff5",
+    "source": "Bursa Efek Indonesia (Berita)",
+    "sent_at": "Selasa, 04 Agustus 2026 Pukul 08:29:45 WIB",
+    "sent_status": true,
+    "analysis": {
+      "summary": "Prabowo Subianto menyatakan keinginannya untuk meningkatkan kerja sama pertahanan antara Indonesia dan Thailand.",
+      "impact_reason": "Peningkatan kerja sama pertahanan dapat memperkuat stabilitas regional dan meningkatkan kepercayaan investor, meskipun dampaknya terhadap pasar saham secara langsung mungkin tidak signifikan.",
+      "category": "Makroekonomi",
+      "impact_level": 2,
+      "sentiment_score": 0.3,
+      "dampak": "Netral \u2696\ufe0f",
+      "tickers": []
+    },
+    "detail_waktu": {
+      "hari": "Selasa",
+      "tanggal": "04 Agustus 2026",
+      "jam": "08:29:45 WIB",
+      "sent_at_iso": "2026-08-04T08:29:45.426574"
+    }
   }
 ]

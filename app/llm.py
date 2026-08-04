@@ -22,7 +22,7 @@ def get_llm(temperature: Optional[float] = None, streaming: bool = False) -> Cha
         timeout=settings.HTTP_TIMEOUT,
         streaming=streaming,
         default_headers={
-            "HTTP-Referer": "https://atlas-ai.local",
-            "X-Title": "Atlas AI",
+            "HTTP-Referer": "https://zimbo-ai.local",
+            "X-Title": "Zimbo AI",
         },
     )
